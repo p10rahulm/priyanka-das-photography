@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ["-m", "rsync", "-r", "-c", "-d", "-x","^.git.*|.*yaml$",".", "gs://www.priyankadas.in"]
+# Run 
+# $> gsutil -m iam ch -r allUsers:legacyObjectReader gs://www.priyankadas.in
+# Use below instead, it is recursive in directories within bucket
+# $> gsutil -m iam ch allUsers:objectViewer gs://www.priyankadas.in
