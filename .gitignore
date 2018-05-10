@@ -1,0 +1,24 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+
+doc/
+audio/
+
+
+.gradle
+*.sw?
+.#*
+*#
+*~
+.classpath
+.project
+.settings
+.idea
+*.iml
+bin
+build
+target
+.springBeans
+tmp*
+grapes
