@@ -4,6 +4,8 @@
 
 doc/
 audio/
+.idea/
+.backups/
 
 
 .gradle
