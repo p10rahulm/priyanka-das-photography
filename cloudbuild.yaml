@@ -5,3 +5,15 @@ steps:
 # $> gsutil -m iam ch -r allUsers:legacyObjectReader gs://www.priyankadas.in
 # Use below instead, it is recursive in directories within bucket
 # $> gsutil -m iam ch allUsers:objectViewer gs://www.priyankadas.in
+
+  gsutil -m rsync ./ gs://www.priyankadas.in
+  gsutil -m rsync -r about gs://www.priyankadas.in/about
+  gsutil -m rsync -r artwork gs://www.priyankadas.in/artwork
+  gsutil -m rsync -r babyphotography gs://www.priyankadas.in/babyphotography
+  gsutil -m rsync -r blog gs://www.priyankadas.in/blog
+  gsutil -m rsync -r contact gs://www.priyankadas.in/contact
+  gsutil -m rsync -r css gs://www.priyankadas.in/css
+  gsutil -m rsync -r gallery gs://www.priyankadas.in/gallery
+  gsutil -m rsync -r images gs://www.priyankadas.in/images
+  gsutil -m rsync -r js gs://www.priyankadas.in/js
+
